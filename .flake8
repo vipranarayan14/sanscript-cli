@@ -1,2 +1,3 @@
 [flake8]
-max-line-length = 88    # To match with that of 'black'
+# To match with that of 'black'
+max-line-length = 88
