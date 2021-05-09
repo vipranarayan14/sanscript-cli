@@ -49,7 +49,7 @@ def check_scheme(scheme_name: str):
     if scheme_name in scheme_names:
         return scheme_name
 
-    error_msg = f"Invalid scheme name. {scheme_help}"
+    error_msg = f"Invalid scheme name. \n\n{scheme_help}"
     raise typer.BadParameter(error_msg)
 
 
