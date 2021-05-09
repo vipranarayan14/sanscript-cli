@@ -4,6 +4,10 @@ from os import path
 import typer
 from indic_transliteration.sanscript import transliterate, SCHEMES, SchemeMap
 
+import help_text
+
+app = typer.Typer()
+
 scheme_names = list(SCHEMES.keys())
 
 scheme_help = "Choose from: {}.".format(", ".join(scheme_names))
@@ -46,8 +50,7 @@ typer_opt_from_scheme = typer.Option(
     ...,
     "--from",
     "-f",
-    help=f"Name of the scheme FROM which the input is to be transliterated. "
-    f"{scheme_help}",
+    help=help_text.from_scheme,
     callback=check_scheme,
 )
 
@@ -55,8 +58,7 @@ typer_opt_to_scheme = typer.Option(
     ...,
     "--to",
     "-t",
-    help=f"Name of the scheme TO which the input is to be transliterated. "
-    f"{scheme_help}",
+    help=help_text.to_scheme,
     callback=check_scheme,
 )
 
@@ -64,22 +66,20 @@ typer_opt_input_file = typer.Option(
     None,
     "--input-file",
     "-i",
-    help="Input file path to transliterate. Note: When this option is used, input from "
-    "the INPUT_STRING argument will be ignored.",
+    help=help_text.input_file,
 )
 
 typer_opt_output_file = typer.Option(
-    None, "--output-file", "-o", help="Output file path"
+    None, "--output-file", "-o", help=help_text.output_file
 )
 
 typer_arg_input_string = typer.Argument(
     None,
-    help="Input string to transliterate from the given '--from' scheme to the given "
-    "'--to' scheme. Note: This input will be ignored if '--input-file' option is "
-    "specified.",
+    help=help_text.input_string,
 )
 
 
+@app.command(help=help_text.program)
 def main(
     from_scheme: str = typer_opt_from_scheme,
     to_scheme: str = typer_opt_to_scheme,
@@ -87,10 +87,6 @@ def main(
     output_file: Optional[typer.FileTextWrite] = typer_opt_output_file,
     input_string: Optional[str] = typer_arg_input_string,
 ):
-    """
-    A CLI for indic script transliteration based on "indic-transliteration" python library.
-
-    """
     scheme_map = SchemeMap(SCHEMES[from_scheme], SCHEMES[to_scheme])
     input_data = get_input_data(input_file, input_string)
 
@@ -99,4 +95,4 @@ def main(
 
 
 if __name__ == "__main__":
-    typer.run(main)
+    app()
