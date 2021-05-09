@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-typer = "*"
-indic-transliteration = "*"
+typer = "~=0.3.2"
+indic-transliteration = "~=2.1.0"
 
 [dev-packages]
 black = "~=21.5b0"
