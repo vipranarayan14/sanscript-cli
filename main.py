@@ -8,7 +8,7 @@ scheme_names = list(SCHEMES.keys())
 scheme_help = "Choose from: {}.".format(", ".join(scheme_names))
 
 
-def get_input_data(input_file: str, input_string: str) -> str:
+def get_input_data(input_file: typer.FileText, input_string: str) -> str:
     if input_file is not None:
         if input_string is not None:
             typer.echo(
@@ -26,7 +26,7 @@ def get_input_data(input_file: str, input_string: str) -> str:
         raise typer.Exit(code=1)
 
 
-def write_output(output_file: str, output_data: str):
+def write_output(output_file: typer.FileTextWrite, output_data: str):
     if output_file is not None:
         output_file.write(output_data)
     else:
