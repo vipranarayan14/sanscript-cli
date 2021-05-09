@@ -12,3 +12,6 @@ black = "~=21.5b0"
 
 [requires]
 python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true #For black
