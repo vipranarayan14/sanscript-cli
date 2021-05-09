@@ -1,4 +1,5 @@
 from typing import Optional
+from os import path
 
 import typer
 from indic_transliteration.sanscript import transliterate, SCHEMES, SchemeMap
@@ -29,6 +30,7 @@ def get_input_data(input_file: typer.FileText, input_string: str) -> str:
 def write_output(output_file: typer.FileTextWrite, output_data: str):
     if output_file is not None:
         output_file.write(output_data)
+        typer.echo(f"Output written to: {path.realpath(output_file.name)}")
     else:
         typer.echo(output_data)
 
