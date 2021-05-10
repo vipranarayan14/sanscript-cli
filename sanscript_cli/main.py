@@ -3,9 +3,15 @@ from typing import Optional
 import typer
 from indic_transliteration.sanscript import transliterate, SCHEMES, SchemeMap
 
-from help_text import program as program_help
-from typer_opts import from_scheme, input_file, input_string, output_file, to_scheme
-from utils import get_input_data, write_output
+from sanscript_cli.help_text import program as program_help
+from sanscript_cli.typer_opts import (
+    from_scheme,
+    input_file,
+    input_string,
+    output_file,
+    to_scheme,
+)
+from sanscript_cli.utils import get_input_data, write_output
 
 app = typer.Typer()
 

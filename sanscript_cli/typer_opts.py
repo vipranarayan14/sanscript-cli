@@ -1,7 +1,7 @@
 import typer
 from indic_transliteration.sanscript import SCHEMES
 
-import help_text
+from sanscript_cli import help_text
 
 scheme_names = list(SCHEMES.keys())
 scheme_help = "Choose from: {}.".format(", ".join(scheme_names))
