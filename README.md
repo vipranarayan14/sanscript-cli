@@ -1,8 +1,8 @@
 # sanscript-cli
 
-A CLI for indic script transliteration based on [indic-transliteration](https://github.com/sanskrit-coders/indic_transliteration) python library.
+A CLI for indic script transliteration based on [indic-transliteration](https://pypi.org/project/indic-transliteration/) python library.
 
-Visit the library's homepage for more information.
+Visit the [library's homepage](https://github.com/sanskrit-coders/indic_transliteration) for more information.
 
 ## Demo
 
@@ -157,6 +157,6 @@ MIT
 
 ## Credits
 
-The program is based on [sanskrit-coders's](https://github.com/sanskrit-coders) [indic-transliteration](https://github.com/sanskrit-coders/indic_transliteration) library -- a python library for transliterating between various indic scripts and romanization schemes.
+The program is based on [sanskrit-coders's](https://github.com/sanskrit-coders) [indic-transliteration](https://pypi.org/project/indic-transliteration/) library -- a python library for transliterating between various indic scripts and romanization schemes.
 
 The program is built using [Typer](https://typer.tiangolo.com/) -- a python library for creating CLI apps quickly.
