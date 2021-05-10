@@ -17,7 +17,8 @@ def get_input_data(input_file: typer.FileText, input_string: str) -> str:
         return input_string
 
     typer.echo(
-        "Error: Either a string or a file is required as input. See help with '--help'.",
+        "Error: Either a string or a file is required as input. See help with "
+        "'--help'.",
         err=True,
     )
     raise typer.Exit(code=1)
