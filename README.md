@@ -4,7 +4,11 @@ A CLI for indic script transliteration based on [indic-transliteration](https://
 
 See the library's homepage for supported scripts/schemes and other information.
 
-<img src="docs/images/demo.gif" width="90%" style="display: block; margin: 0 auto;">
+## Demo
+
+<p align="center">
+  <img src="docs/images/demo.gif" width="90%" style="display: block; margin: 0 auto;">
+</p>
 
 ## Installation
 
