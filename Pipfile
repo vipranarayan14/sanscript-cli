@@ -12,7 +12,7 @@ black = "~=21.5b0"
 flake8 = "~=3.9.2"
 
 [requires]
-python_version = "3.8"
+python_version = "3.6"
 
 [pipenv]
 allow_prereleases = true #For black
