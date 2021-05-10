@@ -97,3 +97,9 @@ Output can be:
 ## License
 
 MIT
+
+## Credits
+
+The program is based on [sanskrit-coders's](https://github.com/sanskrit-coders) [indic-transliteration](https://github.com/sanskrit-coders/indic_transliteration) library -- a python library for transliterating between various indic scripts and romanization schemes.
+
+The program is built using [Typer](https://typer.tiangolo.com/) -- a python library for creating CLI apps quickly.
