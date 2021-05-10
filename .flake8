@@ -1,3 +1,5 @@
 [flake8]
 # To match with that of 'black'
 max-line-length = 88
+per-file-ignores =
+    sanscript_cli/help_text.py: W291, W293
