@@ -1,13 +1,21 @@
 # sanscript-cli
 
-A CLI for indic script transliteration based on "indic-transliteration" python library.
+A CLI for indic script transliteration based on [indic-transliteration](https://github.com/sanskrit-coders/indic_transliteration) python library.
 
-See [the library's homepage](https://github.com/sanskrit-coders/indic_transliteration) for supported scripts/schemes.
+See the library's homepage for supported scripts/schemes and other information.
+
+## Installation
+
+Download the wheel file from the [releases](https://github.com/vipranarayan14/sanscript-cli/releases) page and use [`pip` to install](https://pip.pypa.io/en/latest/user_guide/#installing-from-wheels).
+
+```sh
+$ pip install -U sanscript_cli-xxx.whl
+```
 
 ## Usage
 
 ```sh
-sanscript-cli [OPTIONS] [INPUT_STRING]
+sanscript [OPTIONS] [INPUT_STRING]
 ```
 
 Input can be:
@@ -80,4 +88,6 @@ Output can be:
   Output written to: /home/user/output.txt
   ```
 
-For more info: https://github.com/sanskrit-coders/indic_transliteration
+## License
+
+MIT
