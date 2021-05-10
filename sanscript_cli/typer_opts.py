@@ -7,6 +7,12 @@ scheme_names = list(SCHEMES.keys())
 scheme_help = "Choose from: {}.".format(", ".join(scheme_names))
 
 
+def complete_scheme_name(incomplete: str):
+    for scheme_name in scheme_names:
+        if scheme_name.startswith(incomplete):
+            yield scheme_name
+
+
 def check_scheme(scheme_name: str):
     if scheme_name in scheme_names:
         return scheme_name
@@ -21,6 +27,7 @@ from_scheme = typer.Option(
     "-f",
     help=help_text.from_scheme,
     callback=check_scheme,
+    autocompletion=complete_scheme_name,
 )
 
 to_scheme = typer.Option(
@@ -29,6 +36,7 @@ to_scheme = typer.Option(
     "-t",
     help=help_text.to_scheme,
     callback=check_scheme,
+    autocompletion=complete_scheme_name,
 )
 
 input_file = typer.Option(
