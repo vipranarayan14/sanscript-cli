@@ -4,6 +4,8 @@ A CLI for indic script transliteration based on [indic-transliteration](https://
 
 See the library's homepage for supported scripts/schemes and other information.
 
+<img src="docs/images/demo.gif" width="90%" style="display: block; margin: 0 auto;">
+
 ## Installation
 
 Download the wheel file from the [releases](https://github.com/vipranarayan14/sanscript-cli/releases) page and use [`pip` to install](https://pip.pypa.io/en/latest/user_guide/#installing-from-wheels).
