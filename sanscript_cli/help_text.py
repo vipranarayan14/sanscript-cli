@@ -43,7 +43,7 @@ Output can be:
     
     Output:   rāmāyaṇa
 
-- to file passed '--ouput-file / -o' option
+- to file passed to '--ouput-file / -o' option
 
     Example:  $ sanscript --from hk --to iast "rAmAyaNa" -o output.txt
     
