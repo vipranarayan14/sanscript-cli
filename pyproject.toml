@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sanscript-cli"
-version = "0.2.2"
+version = "0.3.0"
 description = "A CLI for indic script transliteration based on the indic-transliteration python library."
 authors = ["Prasanna Venkatesh T S <vipranarayan14@gmail.com>"]
 license = "MIT"
