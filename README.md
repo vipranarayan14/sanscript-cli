@@ -1,3 +1,7 @@
+# This has been merged into [indic_transliteration](https://github.com/sanskrit-coders/indic_transliteration) package
+
+For the latest source code and other information please refer [sanskrit-coders/indic_transliteration#cli](https://github.com/sanskrit-coders/indic_transliteration#cli), where it will continue to be developed.
+
 # sanscript-cli
 
 A CLI for indic script transliteration based on [indic-transliteration](https://pypi.org/project/indic-transliteration/) python library.
