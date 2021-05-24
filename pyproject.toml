@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.scripts]
-sanscript = "sanscript_cli.main:app"
+sanscript = "sanscript_cli:app"
 
 [tool.poetry.dependencies]
 python = "^3.6.2"

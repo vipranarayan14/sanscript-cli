@@ -1,3 +1,3 @@
-from sanscript_cli.app import app
+from sanscript_cli import app
 
 app(prog_name="sanscript")
